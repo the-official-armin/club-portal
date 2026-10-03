@@ -1,0 +1,32 @@
+name: Check data files
+
+# Runs on every proposed change. If it fails, the page could break,
+# so the change should not be approved until it is fixed.
+on:
+  pull_request:
+  push:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the files are valid JSON
+        run: |
+          python3 -m json.tool data/members.json > /dev/null
+          python3 -m json.tool data/projects.json > /dev/null
+          echo "JSON files are valid"
+
+      - name: Check project status values
+        run: |
+          python3 - <<'EOF'
+          import json, sys
+          allowed = {"Planning", "In Progress", "On Hold", "Done"}
+          projects = json.load(open("data/projects.json"))["projects"]
+          bad = [p["name"] for p in projects if p.get("status") not in allowed]
+          if bad:
+              print("These projects have a status that is not one of", allowed, ":", bad)
+              sys.exit(1)
+          print("Project statuses are valid")
+          EOF

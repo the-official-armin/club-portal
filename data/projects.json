@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "name": "Sample Project",
+      "description": "Replace this with a one-line summary of the project.",
+      "lead": "Sample Student",
+      "team": ["Sample Student", "Another Student"],
+      "status": "In Progress",
+      "next_step": "Pick a date for the first meeting",
+      "updated": "2026-10-02"
+    }
+  ]
+}
