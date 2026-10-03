@@ -40,8 +40,7 @@ When you are done, read [Update your project](update-your-project.md) to learn h
     {
       "name": "Jane Smith",
       "role": "Member",
-      "grade": "11",
-      "joined": "2026-10"
+      "grade": "11"
     }
 ```
 

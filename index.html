@@ -3,33 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Programming/AI Club</title>
+  <title>WaPrep Programming Club</title>
+  <meta name="description" content="WaPrep Programming Club: students at Washington Preparatory School learning to code, building projects together, and exploring AI.">
+  <link rel="icon" href="assets/emblem.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <img src="assets/logo.png" alt="Washington Preparatory School logo" class="logo">
-    <h1>Programming/AI Club</h1>
-    <p class="about">WaPrep Programming Club</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="assets/emblem.png" alt="Washington Preparatory School emblem" class="emblem">
+      <p class="eyebrow">Washington Preparatory School</p>
+      <h1>WaPrep Programming Club</h1>
+      <p class="about">
+        We are a student-led club where we learn to code, build projects together,
+        and explore artificial intelligence. Every member has a role, a project,
+        and a voice in what we build next.
+      </p>
+      <div class="stats" id="stats"></div>
+    </div>
   </header>
 
-  <nav class="tabs">
-    <a href="#members" class="tab" data-tab="members">Members</a>
-    <a href="#projects" class="tab" data-tab="projects">Projects</a>
+  <nav class="tabs" aria-label="Sections">
+    <div class="tabs-inner">
+      <a href="#members" class="tab" data-tab="members">Members</a>
+      <a href="#projects" class="tab" data-tab="projects">Projects</a>
+    </div>
   </nav>
 
   <main>
     <section id="members" class="panel">
-      <h2>Members</h2>
-      <div id="members-table">Loading…</div>
+      <div id="members-content" class="loading">Loading…</div>
     </section>
 
     <section id="projects" class="panel">
-      <h2>Projects</h2>
-      <div id="projects-table">Loading…</div>
+      <div id="projects-content" class="loading">Loading…</div>
 
-      <div class="legend">
+      <div class="legend" aria-label="Status meanings">
         <span class="badge status-planning">Planning</span>
         <span class="badge status-in-progress">In Progress</span>
         <span class="badge status-on-hold">On Hold</span>
@@ -39,7 +52,13 @@
   </main>
 
   <footer class="site-footer">
-    Want to update something? See the <a href="https://github.com/the-official-armin/club-portal#readme">how-to guides</a>.
+    <div>
+      <strong>WaPrep Programming Club</strong> · Washington Preparatory School
+    </div>
+    <div>
+      Want to update something? See the
+      <a href="https://github.com/the-official-armin/club-portal#readme">how-to guides</a>.
+    </div>
   </footer>
 
   <script src="assets/app.js"></script>

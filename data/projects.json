@@ -1,12 +1,18 @@
 {
   "projects": [
     {
-      "name": "Sample Project",
-      "description": "Replace this with a one-line summary of the project.",
-      "lead": "Sample Student",
-      "team": ["Sample Student", "Another Student"],
+      "name": "Office Hours",
+      "description": "Our whole-team project, in progress now.",
+      "lead": "Leadership Team",
+      "team": [
+        "Aryamn Kumar",
+        "Davis Wang",
+        "Lucas Wang",
+        "Samuel He",
+        "Zhenkai (Kai) Fu"
+      ],
       "status": "In Progress",
-      "next_step": "Pick a date for the first meeting",
+      "next_step": "To be updated by the team",
       "updated": "2026-10-02"
     }
   ]

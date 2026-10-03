@@ -1,16 +1,9 @@
 {
   "members": [
-    {
-      "name": "Sample Student",
-      "role": "President",
-      "grade": "12",
-      "joined": "2026-09"
-    },
-    {
-      "name": "Another Student",
-      "role": "Member",
-      "grade": "10",
-      "joined": "2026-10"
-    }
+    { "name": "Aryamn Kumar", "role": "Leadership Team", "grade": "11" },
+    { "name": "Davis Wang", "role": "Leadership Team", "grade": "12" },
+    { "name": "Lucas Wang", "role": "Leadership Team", "grade": "11" },
+    { "name": "Samuel He", "role": "Leadership Team", "grade": "12" },
+    { "name": "Zhenkai (Kai) Fu", "role": "Leadership Team", "grade": "10" }
   ]
 }
