@@ -1,4 +1,4 @@
-# Club Portal
+# Programming/AI Club Portal
 
 A simple website for our club. It shows the **members** and the **projects** list.
 

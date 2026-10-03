@@ -39,7 +39,7 @@ Open `data/projects.json` and put the member's name in the `"team"` list of that
 
 The website is **public** — anyone with the link can see it. Keep it to what is needed:
 
-- ✅ Good: first name and last initial, role, grade, project names
+- ✅ Good: full name, role, grade, project names (the club has chosen to show full names)
 - ❌ Avoid: phone numbers, home addresses, personal emails, photos without parental permission
 
 ## Fixing a broken site
